@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: qwer1234
+    url: jdbc:mysql://localhost:3306/java
+
+
+
+  jpa:
+    hibernate:
+      ddl-auto : create
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl : true
+    show-sql : true

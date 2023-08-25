@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+안녕 밥 먹자
+<p th:text="${name}"></p>
+
+<a href="/home/b?data1=abc&data2=123">
+    GET 방식으로 /home/b에 데이터 전송
+</a>
+
+<form action="/home/c" method="post">
+    <input type="text" name="data1">
+    <input type="text" name="data2">
+    <button>POST 방식으로 /home/c에 데이터 전송</button>
+</form>
+
+</body>
+</html>
